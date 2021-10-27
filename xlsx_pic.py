@@ -13,13 +13,6 @@ from openpyxl import load_workbook
 from openpyxl_image_loader import SheetImageLoader # picture dependency
 from openpyxl.utils import get_column_letter, column_index_from_string # number transform letter
 from io import BytesIO
-try:
-    from xlsx_base_a import *
-except ModuleNotFoundError as error:
-    if __package__ is None:
-        import sys
-        sys.path.append('../../../')
-    from readmodule.xlsx_base_a import *
 
 
 
